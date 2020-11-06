@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>The One Ring</title>
+  </head>
+
+  <body>
+    <!--First Flex item-->
+    <nav class="topnav" id="nav-bar">
+      <input id="hidden-nav" type="checkbox" />
+      <label id="hidlabel" for="hidden-nav">Menu</label>
+      <ul class="menu">
+        <p>
+          <img src="#" alt="logo" style="display: none" id="header-img" /> The
+          One Ring
+        </p>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="nav-link" href="#price">Price</a></li>
+      </ul>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="head">
+        <div id="head-card">
+          <h2>One ring to rule them all</h2>
+          <p>One ring to find them,</p>
+          <p>One ring to bring them all</p>
+          <p>and in the darkness bind them.</p>
+          <div id="buy-btn"><a class="buy" href="#price">Buy Now</a></div>
+        </div>
+      </div>
+      <div class="home-sub">
+        <div id="about-ring">
+          The <b>One Ring</b> is one of the most powerful artifacts ever created
+          in <em>Middle-earth</em>. It was crafted by the
+          <em>Dark Lord Sauron</em> in the Mount Doom, during the Second Age.
+          Sauron's intent was to enhance his own power, and gain lordship over
+          the Elves and all of the other races in Middle-earth.
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Core Features</h2>
+      <div class="feature-card">
+        <p>
+          <img
+            class="icons"
+            src="https://image.flaticon.com/icons/png/512/25/25674.png"
+            alt="invisible icon"
+            width="50"
+          />
+        </p>
+        <strong>Invisibility</strong>
+        <p>The wearer becomes invisible to physical beings</p>
+      </div>
+
+      <div class="feature-card">
+        <p>
+          <img
+            class="icons"
+            src="https://image.flaticon.com/icons/png/512/31/31745.png"
+            alt="extended lifespan icon"
+            width="50"
+          />
+        </p>
+        <strong>Extended life span</strong>
+        <p>Extends the lifespan of a mortal bearer indefinitely</p>
+      </div>
+
+      <div class="feature-card">
+        <p>
+          <img
+            class="icons"
+            src="https://image.flaticon.com/icons/png/512/99/99744.png"
+            alt="Augmented power icon"
+            width="50"
+          />
+        </p>
+        <strong>Augmented power</strong>
+        <p>Enhances the abilities and powers of the wearer</p>
+      </div>
+
+      <div class="feature-card">
+        <p>
+          <img
+            class="icons"
+            src="https://image.flaticon.com/icons/png/512/93/93640.png"
+            alt="Adaptable size icon"
+            width="50"
+          />
+        </p>
+        <strong>Adaptable size</strong>
+        <p>Has the ability to adapt to fingers of varying size</p>
+      </div>
+
+      <div class="feature-card">
+        <p>
+          <img
+            class="icons"
+            src="https://image.flaticon.com/icons/png/512/45/45841.png"
+            alt="false vision icon"
+            width="50"
+          />
+        </p>
+        <strong>False vision</strong>
+        <p>Projects a false vision of its wearer to observers</p>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>Some Reviews</h2>
+      <div class="review-box">
+        <div>
+          <img
+            class="review-img"
+            src="https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/gandalfsmilec.jpg"
+            alt="gandalf comment"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="quotes">
+          <p>
+            <strong>Gandalf</strong>
+            <q
+              >All we have to decide is what to do with the time that is given
+              us</q
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div>
+          <img
+            class="review-img"
+            src="https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/boromir-profile.jpg"
+            alt="boromir comment"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="quotes">
+          <p>
+            <strong>Boromir</strong>
+            <q
+              >[The Ring] is a gift. A gift to the foes of Mordor. Why not use
+              this ring?</q
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div>
+          <img
+            class="review-img"
+            src="https://static.wikia.nocookie.net/lotr/images/8/8d/Gollum.jpg"
+            alt="gollum comment"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="quotes">
+          <p><strong>Gollum</strong> <q>We must have the precious!</q></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <iframe
+        id="video"
+        width="568"
+        height="320"
+        src="https://www.youtube.com/embed/yhRIYluk124"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="price" id="price">
+      <h2>Our Pricing</h2>
+      <div class="price-box">
+        <h2>Monthly</h2>
+        <p class="price-tag">9.99 <sub>G</sub></p>
+        <button type="button" class="button">Get It Now</button>
+      </div>
+      <div class="price-box">
+        <h2>Annual</h2>
+        <p class="price-tag">79.99 <sub>G</sub></p>
+        <button type="button" class="button">Get It Now</button>
+      </div>
+      <div class="price-box">
+        <h2>Lifetime</h2>
+        <p class="price-tag">199 <sub>G</sub></p>
+        <button type="button" class="button">Get It Now</button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label id="email-label" for="email"
+            >Subscribe to the newsletter</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="invite">
+        <p>We invite you to visit our store in</p>
+        <p><strong>Sammath Naur</strong> upon <strong>Mount Doom</strong></p>
+        <p><small>By Pejman </small><span>&hearts;</span></p>
+      </div>
+    </section>
+  </body>
+</html>
