@@ -1,19 +1,163 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
-  overflow-x: hidden;
-  min-width: 320px;
+  font-weight: 400;
+  line-height: 1.7;
 }
+
+/* ~~~~~~ header ~~~~~~ */
+
+.header {
+  height: 95vh;
+  background-image: url('../img/the_one_ring_lotr.jpg'),
+    linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right top;
+
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 1rem;
+}
+
+.heading-primary-main {
+  color: goldenrod;
+  display: block;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+  color: #fff;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(245, 180, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 5px rgb(245, 180, 0, 0.2);
+}
+
+.btn-gold {
+  background-color: goldenrod;
+  color: #121212;
+  font-weight: 700;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-gold::after {
+  background-color: goldenrod;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.5s;
+  animation-fill-mode: backwards;
+}
+/* -------------------------------------------------------------- */
 
 a {
   text-decoration: none;
@@ -68,73 +212,6 @@ a {
   color: goldenrod;
   position: absolute;
   left: 1vw;
-}
-
-/*------- Home --------*/
-.home {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-}
-
-.head {
-  background-image: url("https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/the_one_ring_lotr.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: right center;
-  color: white;
-  height: 600px;
-  text-align: center;
-  display: flex;
-}
-
-#head-card {
-  height: 200px;
-  flex-basis: 50%;
-  align-self: center;
-}
-
-#head-card h2 {
-  color: goldenrod;
-}
-#buy-btn a {
-  color: black;
-}
-
-#buy-btn {
-  margin: 40px 30% 0;
-  padding: 20px 0;
-  font-weight: bold;
-  font-size: 1.14em;
-  background-color: goldenrod;
-  border: 5px solid goldenrod;
-  border-radius: 10px;
-  transition: background-color 0.6s ease;
-}
-
-.head #buy-btn:hover {
-  background-color: snow;
-}
-
-.home-sub {
-  background-color: white;
-  background-image: url("https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/theRinghollow.png");
-  background-attachment: scroll;
-  background-position: -10% 60%;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  height: 350px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#about-ring {
-  flex-basis: 50%;
-  align-self: center;
-  text-align: justify;
-  text-justify: inter-word;
-  padding-right: 10%;
 }
 
 /*-------- Features --------*/
@@ -275,7 +352,7 @@ a {
 }
 
 .price-box {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   background-color: goldenrod;
   border: 1px solid darkgoldenrod;
