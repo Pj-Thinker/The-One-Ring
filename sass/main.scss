@@ -1,4 +1,5 @@
 $color-primary: goldenrod;
+$color-black:  #121212;
 
 *,
 *::before,
@@ -135,7 +136,7 @@ body {
 
 .btn--gold {
   background-color: $color-primary;
-  color: #121212;
+  color: $color-black;
   font-weight: 700;
 }
 
