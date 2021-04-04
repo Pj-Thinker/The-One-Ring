@@ -3,8 +3,13 @@ $color-primary: goldenrod;
 $color-primary-light: lighten(goldenrod, 15%);
 $color-primary-dark: darken(goldenrod, 10%);
 $color-black:  #121212;
+$color-white: #fff;
 
 $color-grey-light-1: #f7f7f7;
+
+// FONT
+$default-font-size: 1.6rem;
+
 
 // GRID
 $grid-width: 114rem;
