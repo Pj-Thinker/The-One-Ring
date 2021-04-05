@@ -381,7 +381,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(232, 193, 95, 0.8), rgba(174, 131, 25, 0.8)), url("../../img/mountDoom.jpg");
+  background-image: linear-gradient(to right, rgba(232, 193, 95, 0.8), rgba(174, 131, 25, 0.8)), url("../img/mountDoom.jpg");
   background-size: cover;
   transform: skewY(7deg);
   margin-top: -10rem; }
