@@ -102,6 +102,20 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -274,6 +288,51 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(18, 18, 18, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+  height: 27rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: skewX(12deg);
+    position: relative; }
+  .story__img {
+    height: 100%;
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out; }
+  .story__text {
+    padding: 3rem 0;
+    padding-left: 18rem;
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -332,6 +391,11 @@ body {
 .section-offers {
   background-color: #f7f7f7;
   padding: 15rem 0; }
+
+.section-stories {
+  position: relative;
+  padding: 20rem 0 10rem 0;
+  margin-top: -10rem; }
 
 a {
   text-decoration: none; }
