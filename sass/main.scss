@@ -12,6 +12,7 @@
 @import 'components/card';
 @import 'components/composition';
 @import 'components/feature-box';
+@import 'components/form';
 @import 'components/story';
 
 @import 'layout/grid';
@@ -19,10 +20,6 @@
 
 @import 'pages/home';
 
-
-a {
-  text-decoration: none;
-}
 
 #hidden-nav,
 #hidlabel {
@@ -89,52 +86,6 @@ a {
   height: auto;
   padding: 30px;
   z-index: 1;
-}
-
-.form,
-.invite {
-  flex-basis: 1;
-}
-
-#email-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-#email {
-  display: block;
-  width: 100%;
-  margin: 0 auto 10px;
-  padding: 10px 30px;
-  background-color: white;
-  border-radius: 8px;
-}
-
-#email:focus {
-  background-color: black;
-  color: white;
-}
-
-#submit {
-  width: 50%;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
-  background-color: #f3dfae;
-}
-
-#submit:hover {
-  background-color: black;
-  border-color: white;
-  color: white;
-}
-
-#email:invalid {
-  background-color: #d92a20;
-}
-
-.invite {
-  padding-top: 15px;
 }
 
 /* Responsive Web Design */
