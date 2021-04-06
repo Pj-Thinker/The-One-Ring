@@ -18,7 +18,7 @@ body {
   }
   
   &--sub {
-    color: #fff;
+    color: $color-grey-light-1;
     display: block;
     font-size: 2rem;
     font-weight: 300;
@@ -49,6 +49,19 @@ body {
   display: inline-block;
   font-size: $default-font-size;
   font-weight: 700;
+
+  &--sub {
+    color: $color-grey-light-1;
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation: moveInRight 1s ease-out;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 .paragraph {
