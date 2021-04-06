@@ -16,20 +16,24 @@
 
 <body>
 
-  <nav class="topnav" id="nav-bar">
-    <input id="hidden-nav" type="checkbox" />
-    <label id="hidlabel" for="hidden-nav">Menu</label>
-    <ul class="menu">
-      <p>
-        <img src="#" alt="logo" style="display: none" id="header-img" /> The
-        One Ring
-      </p>
-      <li><a class="nav-link" href="#home">Home</a></li>
-      <li><a class="nav-link" href="#features">Features</a></li>
-      <li><a class="nav-link" href="#reviews">Reviews</a></li>
-      <li><a class="nav-link" href="#price">Price</a></li>
-    </ul>
-  </nav>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Insights</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Offers</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Newsletter</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <header class="header">
     <div class="header__text-box">
