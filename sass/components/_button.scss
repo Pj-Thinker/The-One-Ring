@@ -1,14 +1,19 @@
 .btn {
+  &,
   &:link,
   &:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: $default-font-size;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 1rem;
-  position: relative;
-  transition: all 0.2s ease-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: $default-font-size;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 1rem;
+    position: relative;
+    transition: all 0.2s ease-out;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
   
   &::after {
@@ -34,7 +39,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 0.5rem rgba(245, 180, 0, 0.2);
   }
