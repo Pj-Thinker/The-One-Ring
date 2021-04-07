@@ -65,7 +65,7 @@
       position: absolute;
       top: 2rem;
       right: 3rem;
-      font-size: 3rem;
+      font-size: 7rem;
       text-decoration: none;
       display: inline-block;
       transition: all .2s;
@@ -73,6 +73,44 @@
 
     &:hover {
       color: $color-primary;
+    }
+  }
+
+  @include respond(tab-port) {
+   
+  
+    &__content {
+      width: 75%;
+      display: block;
+    }
+  
+    &__left {
+      display: block;
+      width: 50%;
+      margin: 1rem auto;
+    }
+  
+    &__right {
+      width: 100%;
+      display: block;
+      padding: 2rem 5rem 3rem;
+      text-align: center;
+    }
+  
+    &__img {
+      border-radius: $border-radius-small;
+    }
+  
+    &__text {
+      margin-bottom: 3rem;
+    }
+  
+    // OPEN  states
+    &__close {
+      &:link,
+      &:visited {
+        font-size: 5rem;
+      }
     }
   }
 }

@@ -9,6 +9,15 @@
   height: 27rem;
   transform: skewX(-12deg);
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0deg);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -17,6 +26,10 @@
     clip-path: circle(50% at 50% 50%);
     transform: skewX(12deg);
     position: relative;
+
+    @include respond(phone) {
+      transform: skewX(0deg);
+    }
   }
 
   &__img {
@@ -29,6 +42,11 @@
     padding: 3rem 0;
     padding-left: 18rem;
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0deg);
+      padding: 1rem 0 1rem 18rem;
+    }
   }
 
   &__caption {
