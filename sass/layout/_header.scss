@@ -11,7 +11,9 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+          (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+          (min-width: 125em) {
     background-image: url('../img/the_one_ring_lotr.jpg'),
     linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
   }

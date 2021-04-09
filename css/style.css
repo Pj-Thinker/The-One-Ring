@@ -287,12 +287,12 @@ body {
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/baggins.jpg); }
   .card__heading {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: 700;
     padding: 1rem 0; }
   .card__details {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     padding: 2rem 1rem; }
   .card__cta {
@@ -704,7 +704,7 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: url("../img/the_one_ring_lotr.jpg"), linear-gradient(to right, black, black); } }
   @media (max-width: 37.5em) {
