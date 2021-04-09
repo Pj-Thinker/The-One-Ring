@@ -23,4 +23,9 @@
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
+
+  @include respond(phone) {
+    width: 50%;
+    margin: 0 auto;
+  }
 }

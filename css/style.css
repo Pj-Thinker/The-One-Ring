@@ -79,14 +79,13 @@ body {
   .heading-primary--main {
     color: goldenrod;
     display: block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     animation: moveInLeft 1s ease-out; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading-primary--main {
-        letter-spacing: 1px;
-        font-size: 4rem; } }
+        font-size: 3.5rem; } }
   .heading-primary--sub {
     color: #f7f7f7;
     display: block;
@@ -382,6 +381,10 @@ body {
         margin-bottom: 0 !important; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  @media (max-width: 37.5em) {
+    .feature-box {
+      width: 50%;
+      margin: 0 auto; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -708,11 +711,20 @@ body {
   .header__text-box {
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 26%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    width: 80%; }
+    @media (max-width: 75em) {
+      .header__text-box {
+        left: 20%; } }
+    @media (max-width: 56.25em) {
+      .header__text-box {
+        top: 50%;
+        left: 50%; } }
     @media (max-width: 37.5em) {
       .header__text-box {
+        top: 65%;
         left: 50%; } }
 
 .navigation__checkbox {
@@ -846,6 +858,9 @@ body {
   @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 26rem 0 15rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -855,6 +870,9 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(-7deg); }
+  @media (max-width: 75em) {
+    .section-features {
+      background-position: top; } }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }

@@ -19,11 +19,22 @@
   &__text-box {
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 26%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 80%;
+
+    @include respond(tab-land) {
+      left: 20%;
+    }
+
+    @include respond(tab-port) {
+      top: 50%;
+      left: 50%;
+    }
 
     @include respond(phone) {
+      top: 65%;
       left: 50%;
     }
   }
