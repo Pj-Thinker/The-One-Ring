@@ -68,7 +68,10 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="img/theRinghollow.png" alt="photo of ring" class="composition__photo composition__photo--p1" />
+            <picture>
+              <source srcset="img/theRinghollow_low.jpg" media="(max-width: 37.5em)">
+              <img src="img/theRinghollow.png" alt="photo of ring" class="composition__photo composition__photo--p1" />
+            </picture>
           </div>
         </div>
       </div>
@@ -148,7 +151,8 @@
       <div class="row">
         <div class="story">
           <figure class="story__shape">
-            <img src="img/boromir.jpg" alt="photo of gandalf" class="story__img">
+            <img srcset="img/boromir_low.jpg 1x, img/boromir.jpg 2x" alt="photo of gandalf" class="story__img"
+              src="img/boromir_low.jpg">
             <figcaption class="story__caption">Boromir</figcaption>
           </figure>
           <div class="story__text">

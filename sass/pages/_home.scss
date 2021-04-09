@@ -18,10 +18,18 @@
     linear-gradient(to right, 
     rgba($color-primary-light, .8), 
     rgba($color-primary-dark, .8)), 
-    url('../img/mountDoom.jpg');
+    url('../img/mountDoom_low.jpg');
   background-size: cover; 
   transform: skewY(7deg);
   margin-top: -10rem;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: 
+    linear-gradient(to right, 
+    rgba($color-primary-light, .8), 
+    rgba($color-primary-dark, .8)), 
+    url('../img/mountDoom.jpg');
+  }
 
   & > * {
     transform: skewY(-7deg);
@@ -70,7 +78,7 @@
                       rgba($color-white, .9) 0%,
                       rgba($color-white, .9) 50%,
                         transparent 50%),
-                      url(../img/mountDoom.jpg);
+                      url(../img/mountDoom_low.jpg);
   background-size: fill;
   background-repeat: no-repeat;
   background-position: center top;
@@ -83,7 +91,7 @@
                       rgba($color-white, .9) 0%,
                       rgba($color-white, .9) 60%,
                         transparent 60%),
-                      url(../img/mountDoom.jpg);
+                      url(../img/mountDoom_low.jpg);
   }
 
   @include respond(tab-port) {
@@ -91,7 +99,7 @@
       to right, 
       rgba($color-white, .9) 0%,
       rgba($color-white, .9) 100%), 
-      url(../img/mountDoom.jpg);
+      url(../img/mountDoom_low.jpg);
 
   }
 

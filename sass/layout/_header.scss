@@ -1,6 +1,6 @@
 .header {
   height: 95vh;
-  background-image: url('../img/the_one_ring_lotr.jpg'),
+  background-image: url('../img/the_one_ring_lotr_small.jpg'),
     linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10,6 +10,11 @@
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: url('../img/the_one_ring_lotr.jpg'),
+    linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+  }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
