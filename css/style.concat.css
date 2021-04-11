@@ -510,7 +510,7 @@ body {
   position: relative; }
   .card__side {
     backface-visibility: hidden;
-    height: 45rem;
+    height: 50rem;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.15);
@@ -1039,6 +1039,7 @@ body {
   left: 0;
   opacity: 0;
   width: 0;
+  transform: scale(0.1);
   z-index: 1200;
   transition: all .6s ease-in-out; }
 
@@ -1076,7 +1077,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  transform: scale(1);
+  width: 100vw; }
 
 .navigation__icon {
   position: relative;
@@ -1115,7 +1117,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 23rem 0;
+  padding: 20rem 0 23rem 0;
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
