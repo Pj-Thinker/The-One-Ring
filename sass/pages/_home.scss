@@ -1,6 +1,6 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 23rem 0;
+  padding: 20rem 0 23rem 0;
   margin-top: -20vh;
 
   @include respond(tab-port) {
