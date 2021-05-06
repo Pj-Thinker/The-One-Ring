@@ -100,18 +100,19 @@
 
     &__background {
       all: unset;
-      height: 6rem;
-      width: 6rem;
-      border-radius: 50%;
+      height: 100vh;
+      width: 100vw;
       position: fixed;
-      top: 3.5rem;
-      right: 3.5rem;
+      top: 0;
+      right: 0;
+      transform-origin: right;
+      transform: scaleX(0) skewY(0deg);
       background-image: radial-gradient(
         $color-primary-light,
         $color-primary-dark
       );
       z-index: 1000;
-      transition: transform 0.8s;
+      transition: transform 0.2s ease-out;
     }
 
     &__nav {
@@ -122,9 +123,8 @@
       left: 0;
       opacity: 0;
       width: 0;
-      transform: scale(0.1);
+      transform: scale(0);
       z-index: 1200;
-      transition: all 0.6s ease-in-out;
     }
 
     &__list {
@@ -170,13 +170,15 @@
     }
 
     &__checkbox:checked ~ &__background {
-      transform: scale(80);
+      transform: scaleX(1) skewY(-12deg);
+      transition: transform 0.35s ease-out;
     }
 
     &__checkbox:checked ~ &__nav {
       opacity: 1;
       transform: scale(1);
       width: 100vw;
+      transition: all 0.4s ease-in;
     }
 
     // ICON
