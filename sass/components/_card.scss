@@ -1,91 +1,90 @@
 .card {
-  // FUNCTIONALITY
-  perspective: 150rem;
-  -moz-perspective: 1500px;
   height: 50rem;
   position: relative;
+  overflow: hidden;
 
   &__side {
-    backface-visibility: hidden;
     height: 50rem;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: all .6s ease;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    transition: all 0.6s ease;
 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 
-
     &--front {
       background-color: $color-white;
     }
 
     &--back {
-      transform: rotateY(180deg);
+      transform: translateY(200%) skewY(12deg);
+      height: 36rem;
 
       &-1 {
-        background-image: 
-          linear-gradient(to right bottom,
+        background-image: linear-gradient(
+          to right bottom,
           $color-secondary-light,
-          $color-secondary-dark);
+          $color-secondary-dark
+        );
       }
 
       &-2 {
-        background-image: 
-          linear-gradient(to right bottom,
+        background-image: linear-gradient(
+          to right bottom,
           $color-primary-light,
-          $color-primary-dark);
+          $color-primary-dark
+        );
       }
 
       &-3 {
-        background-image: 
-          linear-gradient(to right bottom,
+        background-image: linear-gradient(
+          to right bottom,
           $color-tertiary-light,
-          $color-tertiary-dark);
+          $color-tertiary-dark
+        );
       }
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-
   &:hover &__side--back {
-    transform: rotateY(0);
+    transform: translateY(49%) skewY(12deg);
   }
 
   // FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    height: 25rem ;
+    height: 25rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image:
-        linear-gradient(to right bottom,
-        $color-secondary-light,
-        $color-secondary-dark),
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
         url(../img/Samwise.jpg);
     }
 
     &--2 {
-      background-image: 
-        linear-gradient(to right bottom,
-        $color-primary-light,
-        $color-primary-dark),
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
         url(../img/frodo.jpg);
     }
 
     &--3 {
-      background-image: 
-        linear-gradient(to right bottom,
-        $color-tertiary-light,
-        $color-tertiary-dark),
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
         url(../img/baggins.jpg);
     }
   }
@@ -106,17 +105,18 @@
   // Back Side Styling
   &__cta {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) skewY(-12deg);
     width: 90%;
     text-align: center;
   }
 
   &__price-box {
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
     color: $color-white;
+    font-family: Helvetica, sans-serif;
   }
 
   &__price-only {
@@ -124,26 +124,23 @@
   }
 
   &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 5rem;
+    font-weight: 600;
     & sub {
       font-size: 2rem;
     }
   }
 
-
-
   @include respond(tab-port) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &__side {
       height: auto;
       box-shadow: none;
       position: relative;
-
 
       &--back {
         transform: rotateY(0);
